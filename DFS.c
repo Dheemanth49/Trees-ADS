@@ -43,7 +43,7 @@ void dfs(int i)
     visited[i]=1;
     for(j=0;j<n;j++)
     {
-        if(visited[j]&&G[i][j]==1)
+        if(!visited[j]&&G[i][j]==1)
         {
             dfs(j);
         }
